@@ -7,6 +7,8 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -36,6 +38,7 @@
 
     <!-- Favicon Link-->
     <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css">
 
 
     <!-- typed.js  ----->
@@ -52,6 +55,7 @@
             });
         });
     </script>
+
 
 </head>
 
@@ -108,6 +112,27 @@
     </div>  <!-- End Row -->
 
 
+    <!----------------------- SKILLS SECTION  ----------------------------->
+
+    <div class="row">
+
+        <div class="skills">
+
+            <h1 id="daypoint">  MAD SKILLS </h1>
+        <div class="col-xs-12">
+
+            <p id="fadeIn" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea doloribus odit blanditiis
+                soluta alias a ullam atque unde culpa provident nam temporibus quam facere ratione repudiandae suscipit
+                iusto, quisquam vel.</p>
+
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+
+
+
+        </div> <!-- end .col-xs-12 -->
+        </div> <!-- end skills -->
+    </div>    <!-- end row -->
+
     <!----------------------- PORTFOLIO SECTION  ----------------------------->
 
     <div class="row">
@@ -125,9 +150,63 @@
 
     </div> <!-- End row -->
 
+    <!----------------------- ABOUT SECTION  ----------------------------->
 
 
-</div>  <!-- End Container-Fluid -->
+    <div class="row" id="about">
 
+        <div class="col-xs-12">  <!-- .col-md-8 - Right side -->
+
+            <section class="content">
+
+                <h1> Fashion Stylist | Web Developer </h1>
+                <p>
+                    Today, I'am pursuing a career on technology. After working as a fashion stylist for a few years, I have decided to get an BFA
+                    in Web/Interactive Media at the Miami International University of Art & Design. During these past 2 years I have learned the
+                    multi-step process of building a website and creating web applications. Which includes innovating/creating a design,
+                    writing the code, adding animation (if needed), checking for bugs and fixing them as well as testing the site. I have acquired
+                    the knowledge of different programming languages and UI platforms such as HTML5, CSS3, PHP, Javascript, jQuery, Wordpress, SEO among others.
+                    Thanks to <strong style="color:#000000">GOD</strong>,  I love being a web developer and enjoy using my creativity and logic.
+                </p>
+
+                </br>
+
+                <div class="socialmedia">
+
+                    <p  style="border-top:1px solid #fff; padding-top:30px;"> Follow on Social Media </p>
+
+                    <a href="https://www.facebook.com/julissaroadesigner"> Facebook</a>
+                    <a href="https://instagram.com/julissaroa" > &#903 Instagram</a>
+                    <a href="https://www.linkedin.com/pub/julissa-roa/43/baa/81a"> &#903 Linkedin</a>
+                </div>
+
+            </section>
+
+        </div> <!-- End .col-md-8 - Right side -->
+
+    </div>  <!-- End Row -->
+
+
+    </div>  <!-- End Container-Fluid -->
+
+
+<!-- waypoints --->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.1/jquery.waypoints.min.js"></script>
+<script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
+
+
+
+<script>
+    $(document).ready(function(){
+        $("#daypoint").waypoint(function(){
+            $("#fadeIn").addClass("fadeInDown");
+        },{
+            offset:'400'
+
+        });
+
+    });
+</script>
 </body>
 </html>
