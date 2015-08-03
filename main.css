@@ -1,13 +1,23 @@
 
-.navbar-default { background-color: #000000;
-                  background-image: none; !important;
-                   border: none;}
+.navbar-default {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,317684+100 */
+    background: #febbbb; /* Old browsers */
+    background: -moz-linear-gradient(top,  #febbbb 0%, #fe9090 45%, #317684 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#febbbb), color-stop(45%,#fe9090), color-stop(100%,#317684)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #febbbb 0%,#fe9090 45%,#317684 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #febbbb 0%,#fe9090 45%,#317684 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #febbbb 0%,#fe9090 45%,#317684 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #febbbb 0%,#fe9090 45%,#317684 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#317684',GradientType=0 ); /* IE6-9 */
 
-.navbar-default .navbar-nav>li>a { color: #ffffff;}
+    background-image: none; !important;
+    border: none;}
 
-.jumbotron {    margin: 45px;
-                height:650px;
-                background-color: #C7FFDA;}
+.navbar-default .navbar-nav>li>a { color: #92AA83;}
+
+.jumbotron {    margin: 65px 40px;
+                height:354px;
+}
 
 /*------ typed.js  -------*/
 .typed-cursor{
@@ -30,4 +40,25 @@
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+.element { padding: 20px 25px;
+           font-family: "futura";
+           font-size: 3em;
+           color: #0B4F6C;
+           text-align: center;}
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+    .navbar-default .navbar-nav>li>a { color: #C4B1AE;}
+
+    .jumbotron {    margin: 65px 40px;
+                    height:652px;
+                    background-color:#EDEBE6; }
+
+    .element {  font-size: 7em;
+                color: #D5A021;}
+
+
 }
