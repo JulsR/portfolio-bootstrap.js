@@ -36,9 +36,10 @@
     <link href="http://fonts.googleapis.com/css?family=Alegreya+Sans:100italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,400,800" rel="stylesheet" type="text/css">
 
-    <!-- Favicon Link-->
+    <!-- Favicon, Animate.css, Fontawesome Links-->
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
     <!-- typed.js  ----->
@@ -116,18 +117,24 @@
 
     <div class="row">
 
-        <div class="skills">
+        <div class="skills" >
 
-            <h1 id="daypoint">  MAD SKILLS </h1>
-        <div class="col-xs-12">
+            <div class="section">
+                <h1 id="dapoint">Section 2</h1>
+                <p id="fadein">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo recusandae, tempora nobis nulla sit quis voluptatibus voluptates, tenetur consequuntur necessitatibus. At repudiandae ex minima possimus aliquid harum, voluptatum natus laborum laboriosam sequi eum consequatur delectus repellendus, voluptas modi aut maxime nemo quaerat nobis ipsum quasi alias ratione architecto? Temporibus, distinctio?</p>
+                <p>Ut distinctio exercitationem facilis mollitia dolore molestias eum explicabo omnis consequatur ipsa reprehenderit libero a cum quis nam aut iste, voluptate, ullam sunt deleniti ad quos, optio odio. Aspernatur, esse iste quaerat cum eum ipsum. Voluptate molestiae nesciunt alias corrupti quod autem ipsam repudiandae, eaque, possimus, vero earum quae doloremque!</p>
+                <p>Necessitatibus eaque vel maxime provident odio repellendus, similique aspernatur eveniet reiciendis illo exercitationem nisi laborum modi rerum ducimus debitis libero deleniti culpa aliquid fugit eligendi. Aut voluptatum sit illo fuga reiciendis repellat, unde veritatis dolorum laborum sunt, facilis excepturi quas, officiis expedita ipsam odit porro tempora est alias ullam. Distinctio.</p>
+            </div>
 
-            <p id="fadeIn" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea doloribus odit blanditiis
-                soluta alias a ullam atque unde culpa provident nam temporibus quam facere ratione repudiandae suscipit
-                iusto, quisquam vel.</p>
-
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-
-
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <i class="fa fa-code"></i>
+                        <img src="..." alt="...">
+                    </a>
+                </div>
+                ...
+            </div>
 
         </div> <!-- end .col-xs-12 -->
         </div> <!-- end skills -->
@@ -169,17 +176,6 @@
                     Thanks to <strong style="color:#000000">GOD</strong>,  I love being a web developer and enjoy using my creativity and logic.
                 </p>
 
-                </br>
-
-                <div class="socialmedia">
-
-                    <p  style="border-top:1px solid #fff; padding-top:30px;"> Follow on Social Media </p>
-
-                    <a href="https://www.facebook.com/julissaroadesigner"> Facebook</a>
-                    <a href="https://instagram.com/julissaroa" > &#903 Instagram</a>
-                    <a href="https://www.linkedin.com/pub/julissa-roa/43/baa/81a"> &#903 Linkedin</a>
-                </div>
-
             </section>
 
         </div> <!-- End .col-md-8 - Right side -->
@@ -192,20 +188,27 @@
 
 <!-- waypoints --->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.1/jquery.waypoints.min.js"></script>
-<script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.1/jquery.waypoints.min.js"> </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.1/shortcuts/sticky.js"></script>
 
 <script>
     $(document).ready(function(){
-        $("#daypoint").waypoint(function(){
-            $("#fadeIn").addClass("fadeInDown");
+        $("#dapoint").waypoint(function(){
+            $("#fadein").addClass('animated zoomIn');
         },{
-            offset:'400'
-
+            offset:'100'
         });
-
+        var sticky = new Waypoint.Sticky({
+            element: $('header')[0]
+        })
+        $('h1').waypoint(function(){
+            $(this.element).css('color', 'orange');
+            $(this.element).addClass('animated shake');
+        },{
+            offset: '150'
+        });
     });
 </script>
 </body>
