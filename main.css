@@ -12,9 +12,10 @@
 
     background-image: none; !important;
     border: none;
-    font-family: "futura";}
+    font-family: "Courier New", monospace;}
 
-.navbar-default .navbar-nav>li>a { color: #92AA83;}
+.navbar-default .navbar-nav>li>a { color: #424B54;
+                                   text-align: right;}
 
 .jumbotron {    margin: 65px 40px;
                 height:354px;
@@ -49,16 +50,24 @@
            color: #0B4F6C;
            text-align: center;}
 
-.skills {
-            padding: 20px 25px;
+.skills {   padding: 20px 25px;
             height:690px;
             font-size: 2em;
             color: #F1F7EE;
             text-align: center;
             background-color: #E7E247;  }
 
-#daypoint {font-size: 0.5em;}
-#fadeIn{  color: purple;}
+.skills .row { padding-top: 20px;}
+
+#dapoint {  font-family: "Courier New", monospace;
+            color: #0f0f0f;}
+
+.skills h2 { font-family: "Courier New", monospace;
+             font-size: 0.8em;
+             color: #0f0f0f;  }
+
+.thumbnail {  border: none;
+              background-color: transparent;}
 
 
 .portfolio {    margin:65px 40px;

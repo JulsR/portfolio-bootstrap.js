@@ -119,21 +119,45 @@
 
         <div class="skills" >
 
-            <div class="section">
-                <h1 id="dapoint">Section 2</h1>
-                <p id="fadein">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo recusandae, tempora nobis nulla sit quis voluptatibus voluptates, tenetur consequuntur necessitatibus. At repudiandae ex minima possimus aliquid harum, voluptatum natus laborum laboriosam sequi eum consequatur delectus repellendus, voluptas modi aut maxime nemo quaerat nobis ipsum quasi alias ratione architecto? Temporibus, distinctio?</p>
-                <p>Ut distinctio exercitationem facilis mollitia dolore molestias eum explicabo omnis consequatur ipsa reprehenderit libero a cum quis nam aut iste, voluptate, ullam sunt deleniti ad quos, optio odio. Aspernatur, esse iste quaerat cum eum ipsum. Voluptate molestiae nesciunt alias corrupti quod autem ipsam repudiandae, eaque, possimus, vero earum quae doloremque!</p>
-                <p>Necessitatibus eaque vel maxime provident odio repellendus, similique aspernatur eveniet reiciendis illo exercitationem nisi laborum modi rerum ducimus debitis libero deleniti culpa aliquid fugit eligendi. Aut voluptatum sit illo fuga reiciendis repellat, unde veritatis dolorum laborum sunt, facilis excepturi quas, officiis expedita ipsam odit porro tempora est alias ullam. Distinctio.</p>
-            </div>
+
+                <h1 id="dapoint">Mad Skills</h1>
 
             <div class="row">
                 <div class="col-xs-6 col-md-3">
                     <a href="#" class="thumbnail">
-                        <i class="fa fa-code"></i>
-                        <img src="..." alt="...">
+
+                        <img src="images/compu.svg" alt="compu.svg" class="fadein" width="168" height="168">
+                        <h2> Design </h2>
                     </a>
+
                 </div>
-                ...
+
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+
+                        <img src="images/development.svg" alt="development.svg" class="fadein" width="168" height="168">
+                        <h2> Web Development </h2>
+                    </a>
+
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+
+                        <img src="images/ux.svg" alt="ux.svg" class="fadein" width="168" height="168">
+                        <h2> UX Design </h2>
+                    </a>
+
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+
+                        <img src="images/multimedia.svg" alt="multimedia.svg" class="fadein" width="168" height="168">
+                        <h2> Interactive Media </h2>
+                    </a>
+
+                </div>
+
             </div>
 
         </div> <!-- end .col-xs-12 -->
@@ -150,6 +174,31 @@
 
             <div class="col-sm-6 col-md-4">
 
+                <div class="controls">
+                    <label>Filter:</label>
+
+                    <button class="filter" data-filter="all">All</button>
+                    <button class="filter" data-filter=".category-1">Category 1</button>
+                    <button class="filter" data-filter=".category-2">Category 2</button>
+
+                    <label>Sort:</label>
+
+                    <button class="sort" data-sort="myorder:asc">Asc</button>
+                    <button class="sort" data-sort="myorder:desc">Desc</button>
+                </div>
+                <div id="Container" class="container">
+                    <div class="mix category-1" data-myorder="1"></div>
+                    <div class="mix category-1" data-myorder="2"></div>
+                    <div class="mix category-1" data-myorder="3"></div>
+                    <div class="mix category-2" data-myorder="4"></div>
+                    <div class="mix category-1" data-myorder="5"></div>
+                    <div class="mix category-1" data-myorder="6"></div>
+                    <div class="mix category-2" data-myorder="7"></div>
+                    <div class="mix category-2" data-myorder="8"></div>
+
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                </div>
 
             </div> <!-- End .col-sm-6 col-md-4-->
 
@@ -196,20 +245,26 @@
 <script>
     $(document).ready(function(){
         $("#dapoint").waypoint(function(){
-            $("#fadein").addClass('animated zoomIn');
+            $(".fadein").addClass('animated zoomIn');
+
         },{
-            offset:'100'
+            offset:'250'
         });
-        var sticky = new Waypoint.Sticky({
-            element: $('header')[0]
-        })
-        $('h1').waypoint(function(){
-            $(this.element).css('color', 'orange');
-            $(this.element).addClass('animated shake');
-        },{
-            offset: '150'
-        });
+
     });
 </script>
+
+
+<!-- mixitUp --->
+<script src="hhttp://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js?v=2.1.2"></script>
+<script type='text/javascript' src="js/jquery.mixitup.js"></script>
+
+<script>
+    $(function(){
+        $('#Container').mixItUp();
+    });
+</script>
+
+
 </body>
 </html>
