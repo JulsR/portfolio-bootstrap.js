@@ -40,7 +40,6 @@
     <!-- Favicon, Animate.css, Fontawesome Links-->
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
     <!-- typed.js  ----->
@@ -121,7 +120,7 @@
         <div class="skills" >
 
 
-                <h1 id="dapoint">Mad Skills</h1>
+                <h1 id="dapoint" class="fancy_title" >Mad Skills</h1>
 
             <div class="row">
                 <div class="col-xs-6 col-md-3">
@@ -230,6 +229,7 @@
 
             </section>
 
+
         </div> <!-- End .col-md-8 - Right side -->
 
     </div>  <!-- End Row -->
@@ -272,13 +272,23 @@
     </div> <!-- End row -->
 
 
+<div class="col-xs-12">
+
+    <div class="container">
+        <div class="vendor">
+            <iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</div>
+
 
     </div>  <!-- End Container-Fluid -->
 
 
 
 <!-- waypoints --->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.1/jquery.waypoints.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.1/jquery.waypoints.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.1/shortcuts/sticky.js"></script>
 
 <script>
@@ -301,6 +311,27 @@
 <script>
     $(function(){
         $('#Container').mixItUp();
+    });
+</script>
+
+
+<!-- FitVids.js -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        // Target your .container, .wrapper, .post, etc.
+        $(".container").fitVids();
+    });
+</script>
+
+<!-- Lettering.js -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".fancy_title").lettering();
     });
 </script>
 

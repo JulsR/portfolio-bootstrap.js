@@ -15,7 +15,7 @@
     font-family: "Courier New", monospace;}
 
 .navbar-default .navbar-nav>li>a { color: #424B54;
-                                   text-align: right;}
+                                   text-align: center;}
 
 .jumbotron {    margin: 65px 40px;
                 height:354px;
@@ -57,7 +57,20 @@
             text-align: center;
             background-color: #E7E247;  }
 
-.skills .row { padding-top: 20px;}
+/*  Lettering.js */
+h1.fancy_title span{
+    display: inline-block;
+}
+
+.char1, .char3 , .char9 { color: Scrollbar;
+                          transform: skew(45deg) scale(1.1,1.1) rotate(26deg) translate(-10px, 8px);
+                            }
+
+
+.char2, .char6, .char8  {letter-spacing: 5px;
+                               color: seagreen; }
+
+
 
 #dapoint {  font-family: "Courier New", monospace;
             color: #0f0f0f;}
@@ -74,6 +87,7 @@
                 padding: 20px 25px;
                 height:654px;
                 border-radius: 6px;
+                font-family: "Courier New", monospace;
                 font-size: 1.6em;
                 color: #424B54;
                 text-align: center;
@@ -82,8 +96,11 @@
 #about {    padding: 20px 25px;
             height:690px;
             color: #f5f5f5;
+            font-family: "Courier New", monospace;
             text-align: center;
             background-color: #DA8A73;}
+
+
 
 .content { font-size: 0.9em;}
 
@@ -91,10 +108,11 @@
             padding: 20px 25px;
             height:654px;
             border-radius: 6px;
+            font-family: "Courier New", monospace;
             font-size: 1.6em;
             color: #424B54;
             text-align: center;
-            background-color: #DDEF10;}
+            background-color: #B2A19E;}
 
 .form-horizontal {margin: auto 0;}
 
@@ -116,15 +134,15 @@
                 font-size: 2em;
                 color: #fff;
                 text-align: center;
-                background-color: #586F1C;  }
+                background-color: #FC814A;  }
 
     .portfolio {    margin:65px 40px;
                     padding: 20px 25px;
                     height:654px;
                     font-size: 2em;
-                    color: #C4B1AE;
+                    color: #2E2E3A;
                     text-align: center;
-                    background-color: #888C1F;  }
+                    background-color: #9FD8CB;  }
 
     #about {
         padding: 20px 25px;
@@ -132,7 +150,7 @@
         font-size: 1.6em;
         color: #424B54;
         text-align: center;
-        background-color: #C9DF29;}
+        background-color: #E0A721;}
 
 
 
