@@ -1,1 +1,118 @@
 // This is the less style sheet
+//Less List
+
+// Background
+@background: #fff;
+@bg-header: #F6AA1C;
+@bg-body: #8a7967;
+@bg-div: #331419;
+@bg-box-hover: #471B23;
+@bg-section: #DC8A14;
+@bg-footer: #331419;
+
+
+// Font
+@font-color: #DDD;
+@font-colorA: #1C2321;
+@font-colorB: #fff;
+@font-colorC: #0D2F51;
+@font-colorD: #59291c;
+@font-colorE: #8b542f;
+@font-colorF: #941B0C;
+
+//Font style
+@font-sizeA: 75px;
+@font-sizeB: 45px;
+@font-sizeC: 30px;
+@font-sizeD: 24px;
+@font-familyA: Impact;
+@font-familyB: Tahoma;
+@font-familyC: Gill Sans;
+
+//Border
+@border-colorA: #331419;
+@border-colorB: #F6AA1C;
+
+//Mixins
+.thin-border(@radius) { border:5px solid @border-colorA;
+  border-radius: @radius;}
+
+html { background: @background;
+  color: @font-color;
+  font-family: @font-familyB;
+  text-align: center;}
+
+header { height: 70px;
+  margin-top:30px;
+  padding: 5px;
+  background: @bg-header;
+
+  img { padding-left: 30px;
+    float:left;}
+
+  li { margin-left: 30px;
+    padding-right:30px;
+    float: left;
+    display: inline-block;
+    font-family: @font-familyA;
+    font-size: @font-sizeB;
+    color: @font-colorC; }
+}
+
+main {    margin: 30px 100px;
+  height: 760px;
+  font-family: @font-familyB;
+  color: @bg-body;
+
+  h1 { margin:0;
+    font-family: @font-familyA;
+    font-size: @font-sizeA;
+    color: @font-colorE;}
+
+  h3 { font-size: @font-sizeC;
+    color: @font-colorA; }
+
+  p { font-size: @font-sizeD;
+    color: @font-colorA;}
+
+  img { margin: 20px 0;
+    border:15px solid @border-colorB;}
+}
+
+
+section {   background: @bg-section;
+  overflow: hidden;
+
+  h3 {  padding-top: 30px;
+    font-family: @font-familyB;
+    font-size: @font-sizeB;
+    color: @font-colorA;}
+
+  p { font-family: @font-familyC;
+    font-size: @font-sizeC;}
+}
+
+div { width: 150px;
+  height: 150px;
+  margin: 72px;
+  padding: 50px;
+  float: left;
+  background: @bg-div;
+  color: @font-colorB;
+  box-sizing: border-box;
+  transition: 1s all;
+  .thin-border(2px);
+
+
+  &:hover{ background-color: @bg-box-hover;
+    margin-top: 5px;}
+
+  i.fa { font-size: 28px;}
+}
+
+footer {  height: 20px;
+  padding: 15px 0;
+  background: @bg-footer;}
+
+
+
