@@ -120,7 +120,7 @@
 
 
                 <h1 id="dapoint" class="fancy_title" >AREA OF EXPERTISE</h1>
-                    <p>My design background, along with my experience, allows me to take care of projects in every phases, from planning and design, to execution and delivery. </p>
+                    <p id="title">My design background, along with my experience, allows me to take care of projects in every phases, from planning and design, to execution and delivery. </p>
 
             <div class="row">
                 <div class="col-xs-6 col-md-3">
@@ -168,6 +168,29 @@
         </div> <!-- end skills -->
     </div>    <!-- end row -->
 
+
+<!--- Video  -->
+<div class="row">
+    <div class="col-xs-12">
+
+
+        <h1 id="fittext1">DEMO REEL </h1>
+
+
+        <div class="container-fit">
+            <div class="vendor">
+                <iframe width="425" height="349" src="https://www.youtube.com/embed/coHKdhAZ9hU" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+</div>     <!-- end row -->
+
+
+
+
+
+
     <!----------------------- PORTFOLIO SECTION  ----------------------------->
 
     <div class="row">
@@ -176,10 +199,9 @@
 
             <h1> PORTFOLIO</h1>
 
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-12 col-md-12">
 
                 <div class="controls">
-
 
                     <button class="filter" data-filter="all">All</button>
                     <button class="filter" data-filter=".category-1">Web Design</button>
@@ -212,20 +234,6 @@
     </div> <!-- End row -->
 
 
-<!--- Video  -->
-<div class="row">
-    <div class="col-xs-12">
-
-        <div class="container">
-            <div class="vendor">
-                <iframe width="425" height="349" src="https://www.youtube.com/embed/coHKdhAZ9hU" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-
-    </div>
-</div>     <!-- end row -->
-
-
     <!----------------------- ABOUT SECTION  ----------------------------->
 
 
@@ -235,7 +243,8 @@
 
             <section class="content">
 
-                <h1> Fashion Stylist | Web Developer </h1>
+                <h1> ABOUT ME</h1>
+                    <h2> Fashion Stylist | Web Developer </h2>
                 <p>
                     Today, I'am pursuing a career on technology. After working as a fashion stylist for a few years, I have decided to get an BFA
                     in Web/Interactive Media at the Miami International University of Art & Design. During these past 2 years I have learned the
@@ -328,7 +337,7 @@
 <script>
     $(document).ready(function(){
         // Target your .container, .wrapper, .post, etc.
-        $(".container").fitVids();
+        $(".container-fit").fitVids();
     });
 </script>
 
@@ -340,6 +349,17 @@
         $(".fancy_title").lettering();
     });
 </script>
+
+
+<!-- FitText.js -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js"></script>
+<script type="text/javascript">
+    $("#fittext1").fitText(1.1, { minFontSize: '50px', maxFontSize: '575px' });
+</script>
+
+
+
 
 
 </body>

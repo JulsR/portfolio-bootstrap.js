@@ -54,7 +54,8 @@
             font-size: 2em;
             color: #F1F7EE;
             text-align: center;
-            background-color: #E7E247;  }
+            background-color: #E7E247;
+            font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif}
 
 /*  Lettering.js */
 h1.fancy_title span{
