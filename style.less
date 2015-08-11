@@ -3,27 +3,25 @@
 
 // background
 @background-nav: #fff;
-@bg-skills: #E7E247;
-@bg-portfolio: #B2A19E;
-@bg-about:  #DA8A73;
+@bg-skills: #CBD4C2;
+@bg-portfolio: #C3B299;
+@bg-about:  #929982;
+@bg-contact: #1E2D2F;
 
-
-@bg-box-hover: #471B23;
-@bg-section: #DC8A14;
-@bg-footer: #331419;
 
 
 // font color
 @font-color: #424B54;
-@font-colorA: #0B4F6C;
+@font-colorA: #fff;
 @font-colorB: #F1F7EE;
 @font-colorC: #238E68;
 @font-colorD: #0f0f0f;
 @font-colorE: #424B54;
 @font-colorF: #f5f5f5;
+@font-colorG: #2E2E3A;
 
 //font size
-@font-sizeA: 3em;
+@font-sizeA: 5.3em;
 @font-sizeB: 1.6em;
 @font-sizeC: 0.9em;
 
@@ -31,7 +29,7 @@
 
 //font family
 @font-familyA: "Courier New", monospace;
-@font-familyB: 'Roboto', sans-serif;
+@font-familyB: 'Futura';
 
 @font-familyC: Gill Sans;
 
@@ -40,15 +38,8 @@
 @border-colorB: #F6AA1C;
 
 //Mixins
-.thin-border(@radius) { border:5px solid @border-colorA;
-  border-radius: @radius;}
 
-
-  img { margin: 20px 0;
-    border:15px solid @border-colorB;}
-
-
-/* ----------------------------------------------- ------------------------------------- --------------------------- */
+body { background-image: url("https://farm6.staticflickr.com/5621/19873946623_41f7c22954_o.jpg");  }
 
 div {
 
@@ -62,9 +53,7 @@ div {
     background: -ms-linear-gradient(top, #febbbb 0%, #fe9090 45%, #317684 100%); /* IE10+ */
     background: linear-gradient(to bottom, #febbbb 0%, #fe9090 45%, #317684 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#febbbb', endColorstr='#317684', GradientType=0); /* IE6-9 */
-
-    background-image: none;
-  !important;
+    background-image: none !important;
     border: none;
     font-family: @font-familyA;
   }
@@ -72,8 +61,7 @@ div {
   .navbar-default .navbar-nav > li > a {  color: @font-color;
                                           text-align: center;  }
 
-  .jumbotron {  margin: 65px 40px;
-                height: 354px;  }
+  .intro {  height: 770px;  }
 
  // typed.js
   .typed-cursor {
@@ -103,7 +91,7 @@ div {
 
   // end
 
-  .element {  padding: 20px 25px;
+  .element {  padding: 220px 25px;
               font-family: @font-familyB;
               font-size: @font-sizeA;
               color: @font-colorA;
@@ -114,7 +102,15 @@ div {
               font-size: 2em;
               color:@font-colorB;
               text-align: center;
-              background-color: @bg-skills;  }
+              background-color: @bg-skills;
+
+
+    h1, p {font-family: @font-familyB;
+           font-size: @font-sizeB;
+           }
+  }
+
+
 
   //  Lettering.js
   h1.fancy_title span {  display: inline-block;  }
@@ -135,41 +131,38 @@ div {
   .thumbnail {  border: none;
                 background-color: transparent;  }
 
-  .portfolio {
-    margin: 65px 40px;
-    padding: 20px 25px;
-    height: 654px;
-    border-radius: 6px;
-    font-family: @font-familyA;
-    font-size: @font-sizeB;
-    color: @font-colorE;
-    text-align: center;
-    background-color: @bg-portfolio;
-  }
+  .portfolio {  margin-top: 65px;
 
-  #about {  padding: 20px 25px;
-            height: 690px;
-            color: @font-colorF;
-            font-family: @font-familyA;
-            text-align: center;
-            background-color: @bg-about;  }
+                height:770px;
+                font-size: 2em;
+                color: @font-colorG;
+                text-align: center;
+                background-color: @bg-portfolio;  }
+
+
 
   .content {  font-size: @font-sizeC;  }
 
-  .contact {
-    margin: 65px 40px;
-    padding: 20px 25px;
-    height: 654px;
-    border-radius: 6px;
-    font-family: @font-familyA;
-    font-size: @font-sizeB;
-    color: @font-colorE;
-    text-align: center;
-    background-color: #B2A19E;
+  .contact {  margin: 65px 40px;
+              padding: 20px 25px;
+              height: 654px;
+              border-radius: 6px;
+              font-family: @font-familyA;
+              font-size: @font-sizeB;
+              color: @font-colorE;
+              text-align: center;
+              background-color: @bg-contact;
   }
 
   .form-horizontal {  margin: auto 0;  }
 
 }
+
+#about {  padding: 20px 25px;
+  height: 690px;
+  color: @font-colorF;
+  font-family: @font-familyA;
+  text-align: center;
+  background-color: @bg-about;  }
 
 

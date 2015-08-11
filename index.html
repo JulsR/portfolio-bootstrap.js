@@ -29,7 +29,7 @@
 
     <!-- Normalize.css and Index stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" type="text/css">
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="mixitup.css" type="text/css">
 
     <!-- Google Font Links-->
@@ -49,7 +49,7 @@
             $(".element").typed({
                 strings: ["You don’t have to be “a creative", "to be creative.", "DRORY BEN-MENACHEM",
                     "Ok,enough","Let's talk like real haxters now.", "I am an overachiver but not", "the cocky irritating one," , "also a dreamer but" , "not the unrealistic one.",
-                    "HEY __________ <br> CHOP CHOP!!", "Want to find out more?", "then keep on scrolling!, ugh", "" , "Julissa Roa"],
+                    "HEY __________ <br> CHOP CHOP!!", "Want to find out more?", "then keep on scrolling!, ugh", "" , "Julissa Roa <br> Fashion Stylist - Web Developer"],
                 typeSpeed: 0.5,
                 showCursor: false
             });
@@ -103,7 +103,7 @@
 <div class="container-fluid">
     <div class="row">
 
-    <div class="jumbotron">
+    <div class="intro">
 
         <div class="element"> </div>
 
@@ -119,14 +119,16 @@
         <div class="skills" >
 
 
-                <h1 id="dapoint" class="fancy_title" >Mad Skills</h1>
+                <h1 id="dapoint" class="fancy_title" >AREA OF EXPERTISE</h1>
+                    <p>My design background, along with my experience, allows me to take care of projects in every phases, from planning and design, to execution and delivery. </p>
 
             <div class="row">
                 <div class="col-xs-6 col-md-3">
                     <a href="#" class="thumbnail">
 
-                        <img src="images/compu.svg" alt="compu.svg" class="fadein" width="168" height="168">
+                        <img src="images/compu.svg" alt="compu.svg" class="fadein" width="158" height="158">
                         <h2> Design </h2>
+                            <p>Art or profession of using design elements to convey information or create an effect.</p>
                     </a>
 
                 </div>
@@ -134,8 +136,9 @@
                 <div class="col-xs-6 col-md-3">
                     <a href="#" class="thumbnail">
 
-                        <img src="images/development.svg" alt="development.svg" class="fadein" width="168" height="168">
+                        <img src="images/development.svg" alt="development.svg" class="fadein" width="158" height="158">
                         <h2> Web Development </h2>
+                            <p>Tasks associated with developing websites for hosting via intranet or Internet</p>
                     </a>
 
                 </div>
@@ -143,16 +146,18 @@
                 <div class="col-xs-6 col-md-3">
                     <a href="#" class="thumbnail">
 
-                        <img src="images/ux.svg" alt="ux.svg" class="fadein" width="168" height="168">
+                        <img src="images/ux.svg" alt="ux.svg" class="fadein" width="158" height="158">
                         <h2> UX Design </h2>
+                            <p>Enhancing user satisfaction by improving the usability and accessibility between the user and the product.</p>
                     </a>
 
                 </div>
                 <div class="col-xs-6 col-md-3">
                     <a href="#" class="thumbnail">
 
-                        <img src="images/multimedia.svg" alt="multimedia.svg" class="fadein" width="168" height="168">
+                        <img src="images/multimedia.svg" alt="multimedia.svg" class="fadein" width="158" height="158">
                         <h2> Interactive Media </h2>
+                            <p>Presenting content such as text, graphics, animation, video, audio, games, etc.</p>
                     </a>
 
                 </div>
@@ -181,14 +186,11 @@
                     <button class="filter" data-filter=".category-2">Graphic Design</button>
 
 
-
-                    <button class="sort" data-sort="myorder:asc">Asc</button>
-                    <button class="sort" data-sort="myorder:desc">Desc</button>
                 </div>
                 <div id="Container" class="container">
                     <div class="mix category-1" data-myorder="1">
                         <figure>
-                            <img src="images/travelpage.jpg" alt="travel" width="100%" height="100%">
+                            <!--<img src="images/travelpage.jpg" alt="travel" width="100%" height="100%"> -->
                         </figure>
                     </div>
                     <div class="mix category-1" data-myorder="2"></div>
@@ -208,6 +210,21 @@
         </div> <!-- End portfolio -->
 
     </div> <!-- End row -->
+
+
+<!--- Video  -->
+<div class="row">
+    <div class="col-xs-12">
+
+        <div class="container">
+            <div class="vendor">
+                <iframe width="425" height="349" src="https://www.youtube.com/embed/coHKdhAZ9hU" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+</div>     <!-- end row -->
+
 
     <!----------------------- ABOUT SECTION  ----------------------------->
 
@@ -242,7 +259,7 @@
 
     <div class="contact">
 
-        <h1>Contact Us</h1>
+        <h1>Want to talk Nerdy?!</h1>
 
         <div class="col-sm-12">
 
@@ -250,15 +267,15 @@
             <form class="form-horizontal">
                 <div class="form-group">
                     <label for="exampleInputName2">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    <input type="text" class="form-control" id="exampleInputName2">
                 </div>
                 <div class="form-group">
                     <label for="inputEmail3">Email</label>
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    <input type="email" class="form-control" id="inputEmail3">
 
                 </div>
                 <div class="form-group">
-                    <label>Drop a line</label>
+                    <label>Go ahead and drop a line</label>
                     <textarea class="form-control" rows="3"> </textarea>
                 </div>
 
@@ -271,17 +288,6 @@
         </div> <!-- End portfolio -->
 
     </div> <!-- End row -->
-
-
-<div class="col-xs-12">
-
-    <div class="container">
-        <div class="vendor">
-            <iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-</div>
 
 
     </div>  <!-- End Container-Fluid -->

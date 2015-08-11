@@ -9,7 +9,6 @@
     background: -ms-linear-gradient(top,  #febbbb 0%,#fe9090 45%,#317684 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #febbbb 0%,#fe9090 45%,#317684 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#317684',GradientType=0 ); /* IE6-9 */
-
     background-image: none; !important;
     border: none;
     font-family: "Courier New", monospace;}

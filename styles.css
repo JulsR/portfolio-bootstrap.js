@@ -1,88 +1,152 @@
-html {
-  background: #ffffff;
-  color: #dddddd;
-  font-family: Tahoma;
+body {
+  background-image: url("https://farm6.staticflickr.com/5621/19873946623_41f7c22954_o.jpg");
+}
+div .navbar-default {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,317684+100 */
+  background: #febbbb;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #febbbb 0%, #fe9090 45%, #317684 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #febbbb), color-stop(45%, #fe9090), color-stop(100%, #317684));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #febbbb 0%, #fe9090 45%, #317684 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #febbbb 0%, #fe9090 45%, #317684 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #febbbb 0%, #fe9090 45%, #317684 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #febbbb 0%, #fe9090 45%, #317684 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#febbbb', endColorstr='#317684', GradientType=0);
+  /* IE6-9 */
+  background-image: none !important;
+  border: none;
+  font-family: "Courier New", monospace;
+}
+div .navbar-default .navbar-nav > li > a {
+  color: #424b54;
   text-align: center;
 }
-header {
-  height: 70px;
-  margin-top: 30px;
-  padding: 5px;
-  background: #f6aa1c;
+div .intro {
+  height: 770px;
 }
-header img {
-  padding-left: 30px;
-  float: left;
+div .typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
-header li {
-  margin-left: 30px;
-  padding-right: 30px;
-  float: left;
-  display: inline-block;
-  font-family: Impact;
-  font-size: 45px;
-  color: #0d2f51;
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-main {
-  margin: 30px 100px;
-  height: 760px;
-  font-family: Tahoma;
-  color: #8a7967;
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-main h1 {
-  margin: 0;
-  font-family: Impact;
-  font-size: 75px;
-  color: #8b542f;
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-main h3 {
-  font-size: 30px;
-  color: #1c2321;
-}
-main p {
-  font-size: 24px;
-  color: #1c2321;
-}
-main img {
-  margin: 20px 0;
-  border: 15px solid #f6aa1c;
-}
-section {
-  background: #dc8a14;
-  overflow: hidden;
-}
-section h3 {
-  padding-top: 30px;
-  font-family: Tahoma;
-  font-size: 45px;
-  color: #1c2321;
-}
-section p {
-  font-family: Gill Sans;
-  font-size: 30px;
-}
-div {
-  width: 150px;
-  height: 150px;
-  margin: 72px;
-  padding: 50px;
-  float: left;
-  background: #331419;
+div .element {
+  padding: 220px 25px;
+  font-family: 'Futura';
+  font-size: 5.3em;
   color: #ffffff;
-  box-sizing: border-box;
-  transition: 1s all;
-  border: 5px solid #331419;
-  border-radius: 2px;
+  text-align: center;
 }
-div:hover {
-  background-color: #471b23;
-  margin-top: 5px;
+div .skills {
+  padding: 20px 25px;
+  height: 690px;
+  font-size: 2em;
+  color: #f1f7ee;
+  text-align: center;
+  background-color: #cbd4c2;
 }
-div i.fa {
-  font-size: 28px;
+div .skills h1,
+div .skills p {
+  font-family: 'Futura';
+  font-size: 1.6em;
 }
-footer {
-  height: 20px;
-  padding: 15px 0;
-  background: #331419;
+div h1.fancy_title span {
+  display: inline-block;
+}
+div .char1,
+div .char3,
+div .char9 {
+  color: Scrollbar;
+  transform: skew(45deg) scale(1.1, 1.1) rotate(26deg) translate(-10px, 8px);
+}
+div .char2,
+div .char6,
+div .char8 {
+  letter-spacing: 5px;
+  color: #238e68;
+}
+div #dapoint {
+  font-family: "Courier New", monospace;
+  color: #0f0f0f;
+}
+div .skills h2 {
+  font-family: "Courier New", monospace;
+  font-size: 0.8em;
+  color: #0f0f0f;
+}
+div .thumbnail {
+  border: none;
+  background-color: transparent;
+}
+div .portfolio {
+  margin-top: 65px;
+  height: 770px;
+  font-size: 2em;
+  color: #2e2e3a;
+  text-align: center;
+  background-color: #c3b299;
+}
+div .content {
+  font-size: 0.9em;
+}
+div .contact {
+  margin: 65px 40px;
+  padding: 20px 25px;
+  height: 654px;
+  border-radius: 6px;
+  font-family: "Courier New", monospace;
+  font-size: 1.6em;
+  color: #424b54;
+  text-align: center;
+  background-color: #1e2d2f;
+}
+div .form-horizontal {
+  margin: auto 0;
+}
+#about {
+  padding: 20px 25px;
+  height: 690px;
+  color: #f5f5f5;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  background-color: #929982;
 }
