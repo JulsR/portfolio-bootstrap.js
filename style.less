@@ -1,32 +1,38 @@
 // This is the less style sheet
 //Less List
 
-// Background
-@background: #fff;
-@bg-header: #F6AA1C;
-@bg-body: #8a7967;
-@bg-div: #331419;
+// background
+@background-nav: #fff;
+@bg-skills: #E7E247;
+@bg-portfolio: #B2A19E;
+@bg-about:  #DA8A73;
+
+
 @bg-box-hover: #471B23;
 @bg-section: #DC8A14;
 @bg-footer: #331419;
 
 
-// Font
-@font-color: #DDD;
-@font-colorA: #1C2321;
-@font-colorB: #fff;
-@font-colorC: #0D2F51;
-@font-colorD: #59291c;
-@font-colorE: #8b542f;
-@font-colorF: #941B0C;
+// font color
+@font-color: #424B54;
+@font-colorA: #0B4F6C;
+@font-colorB: #F1F7EE;
+@font-colorC: #238E68;
+@font-colorD: #0f0f0f;
+@font-colorE: #424B54;
+@font-colorF: #f5f5f5;
 
-//Font style
-@font-sizeA: 75px;
-@font-sizeB: 45px;
-@font-sizeC: 30px;
+//font size
+@font-sizeA: 3em;
+@font-sizeB: 1.6em;
+@font-sizeC: 0.9em;
+
 @font-sizeD: 24px;
-@font-familyA: Impact;
-@font-familyB: Tahoma;
+
+//font family
+@font-familyA: "Courier New", monospace;
+@font-familyB: 'Roboto', sans-serif;
+
 @font-familyC: Gill Sans;
 
 //Border
@@ -37,82 +43,133 @@
 .thin-border(@radius) { border:5px solid @border-colorA;
   border-radius: @radius;}
 
-html { background: @background;
-  color: @font-color;
-  font-family: @font-familyB;
-  text-align: center;}
-
-header { height: 70px;
-  margin-top:30px;
-  padding: 5px;
-  background: @bg-header;
-
-  img { padding-left: 30px;
-    float:left;}
-
-  li { margin-left: 30px;
-    padding-right:30px;
-    float: left;
-    display: inline-block;
-    font-family: @font-familyA;
-    font-size: @font-sizeB;
-    color: @font-colorC; }
-}
-
-main {    margin: 30px 100px;
-  height: 760px;
-  font-family: @font-familyB;
-  color: @bg-body;
-
-  h1 { margin:0;
-    font-family: @font-familyA;
-    font-size: @font-sizeA;
-    color: @font-colorE;}
-
-  h3 { font-size: @font-sizeC;
-    color: @font-colorA; }
-
-  p { font-size: @font-sizeD;
-    color: @font-colorA;}
 
   img { margin: 20px 0;
     border:15px solid @border-colorB;}
-}
 
 
-section {   background: @bg-section;
-  overflow: hidden;
+/* ----------------------------------------------- ------------------------------------- --------------------------- */
 
-  h3 {  padding-top: 30px;
-    font-family: @font-familyB;
+div {
+
+  .navbar-default {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,317684+100 */
+    background: #febbbb; /* Old browsers */
+    background: -moz-linear-gradient(top, #febbbb 0%, #fe9090 45%, #317684 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #febbbb), color-stop(45%, #fe9090), color-stop(100%, #317684)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #febbbb 0%, #fe9090 45%, #317684 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #febbbb 0%, #fe9090 45%, #317684 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #febbbb 0%, #fe9090 45%, #317684 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #febbbb 0%, #fe9090 45%, #317684 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#febbbb', endColorstr='#317684', GradientType=0); /* IE6-9 */
+
+    background-image: none;
+  !important;
+    border: none;
+    font-family: @font-familyA;
+  }
+
+  .navbar-default .navbar-nav > li > a {  color: @font-color;
+                                          text-align: center;  }
+
+  .jumbotron {  margin: 65px 40px;
+                height: 354px;  }
+
+ // typed.js
+  .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+
+  @keyframes blink {
+    0% {  opacity: 1;  }
+    50% {  opacity: 0;  }
+    100% {  opacity: 1;  }
+  }
+
+  @-webkit-keyframes blink {
+    0% {  opacity: 1;  }
+    50% {  opacity: 0;  }
+    100% {  opacity: 1;  }
+  }
+
+  @-moz-keyframes blink {
+    0% {  opacity: 1;  }
+    50% {  opacity: 0;  }
+    100% {  opacity: 1;  }
+  }
+
+  // end
+
+  .element {  padding: 20px 25px;
+              font-family: @font-familyB;
+              font-size: @font-sizeA;
+              color: @font-colorA;
+              text-align: center;  }
+
+  .skills {   padding: 20px 25px;
+              height: 690px;
+              font-size: 2em;
+              color:@font-colorB;
+              text-align: center;
+              background-color: @bg-skills;  }
+
+  //  Lettering.js
+  h1.fancy_title span {  display: inline-block;  }
+
+  .char1, .char3, .char9 {  color: Scrollbar;
+                            transform: skew(45deg) scale(1.1, 1.1) rotate(26deg) translate(-10px, 8px);  }
+
+  .char2, .char6, .char8 {  letter-spacing: 5px;
+                            color: @font-colorC;  }
+
+  #dapoint {  font-family: @font-familyA;
+              color: @font-colorD;  }
+
+  .skills h2 {  font-family: @font-familyA;
+                font-size: 0.8em;
+                color: @font-colorD;  }
+
+  .thumbnail {  border: none;
+                background-color: transparent;  }
+
+  .portfolio {
+    margin: 65px 40px;
+    padding: 20px 25px;
+    height: 654px;
+    border-radius: 6px;
+    font-family: @font-familyA;
     font-size: @font-sizeB;
-    color: @font-colorA;}
+    color: @font-colorE;
+    text-align: center;
+    background-color: @bg-portfolio;
+  }
 
-  p { font-family: @font-familyC;
-    font-size: @font-sizeC;}
+  #about {  padding: 20px 25px;
+            height: 690px;
+            color: @font-colorF;
+            font-family: @font-familyA;
+            text-align: center;
+            background-color: @bg-about;  }
+
+  .content {  font-size: @font-sizeC;  }
+
+  .contact {
+    margin: 65px 40px;
+    padding: 20px 25px;
+    height: 654px;
+    border-radius: 6px;
+    font-family: @font-familyA;
+    font-size: @font-sizeB;
+    color: @font-colorE;
+    text-align: center;
+    background-color: #B2A19E;
+  }
+
+  .form-horizontal {  margin: auto 0;  }
+
 }
-
-div { width: 150px;
-  height: 150px;
-  margin: 72px;
-  padding: 50px;
-  float: left;
-  background: @bg-div;
-  color: @font-colorB;
-  box-sizing: border-box;
-  transition: 1s all;
-  .thin-border(2px);
-
-
-  &:hover{ background-color: @bg-box-hover;
-    margin-top: 5px;}
-
-  i.fa { font-size: 28px;}
-}
-
-footer {  height: 20px;
-  padding: 15px 0;
-  background: @bg-footer;}
-
 
 
