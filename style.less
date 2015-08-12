@@ -1,12 +1,17 @@
+@import "elements.less";
+@import "main.less";
+
+
 // This is the less style sheet
 //Less List
 
+
 // background
 @background-nav: #fff;
-@bg-skills: #CBD4C2;
-@bg-portfolio: #C3B299;
-@bg-about:  #929982;
-@bg-contact: #1E2D2F;
+@bg-skills: @c-dark-1;
+@bg-portfolio: @c-light-1;
+@bg-about:  @c-split-1-d;
+@bg-contact: @c-split-2-l;
 
 
 
@@ -57,7 +62,7 @@ div {
     background: -ms-linear-gradient(top, #febbbb 0%, #fe9090 45%, #317684 100%); /* IE10+ */
     background: linear-gradient(to bottom, #febbbb 0%, #fe9090 45%, #317684 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#febbbb', endColorstr='#317684', GradientType=0); /* IE6-9 */
-    background-image: none !important;
+    .gradient(#F5F5F5, #EEE, #FFF);
     border: none;
     font-family: @font-familyA;
   }
@@ -108,16 +113,21 @@ div {
               text-align: center;
               background-color: @bg-skills;
 
+    .thumbnails {  .bordered(#EEE, #E5E5E5, #DDD, #E5E5E5);}
+
+
 
     h2 {  font-family: @font-familyA;
       font-size: 0.8em;
-      color: @font-colorD;  }
+      color: @font-colorD;
+     }
 
 
 
     p {    font-family: @font-familyC;
            font-size: @font-sizeD;
-           color: @font-colorH;
+           color: @font-color;
+          .user-select(none);
 
         #title { font-family: @font-familyC;
                  font-size: @font-sizeC;  }
@@ -125,12 +135,13 @@ div {
            }
   }
 
-  #fittext1{  text-align: center;
+  #fittext1{    text-align: center;
                 color: @font-colorA;
                 font: 95px/1 "Impact";
                 text-transform: uppercase;
                 display: block;
-                margin: 5% auto 5%;}
+                margin: 5% auto 5%;
+    .inner-shadow(0, 2px, 2px, 0.4);}
 
 
   .container-fit {
@@ -141,7 +152,8 @@ div {
 
 
   //  Lettering.js
-  h1.fancy_title span {  display: inline-block;  }
+  h1.fancy_title span {  display: inline-block;
+                         .scale(3);}
 
   .char1, .char3, .char9 {  color: Scrollbar;
                             transform: skew(45deg) scale(1.1, 1.1) rotate(26deg) translate(-10px, 8px);  }
@@ -163,6 +175,7 @@ div {
                 color: @font-colorG;
                 text-align: center;
                 background-color: @bg-portfolio;
+
 
 
     h1 {  padding-top: 65px;
@@ -191,11 +204,12 @@ div {
     height: 660px;
     font-size: @font-sizeC;
     text-align: center;
-    background: rgba(0,0,0,0.2);
+    .bw-gradient(#EEE, 230, 255);
+
 
   h1 {  padding-top: 65px;
         text-align: center;
-        color: @font-colorA;
+        color: @font-color;
         font: 95px/1 "Impact";
         text-transform: uppercase;
         display: block;
@@ -205,7 +219,7 @@ div {
     p{  padding: 0 100px;
         font-family: @font-familyC;
         font-size: @font-sizeE;
-        color: @font-colorF;
+        color: @font-color;
         }
 
   }
@@ -233,6 +247,7 @@ div {
               color: @font-colorE;
               text-align: center;
               background-color: @bg-contact;
+              .opacity(0.8);
 
 
     h1{   padding-top: 65px;

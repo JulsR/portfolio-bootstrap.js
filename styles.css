@@ -1,3 +1,9 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 body {
   background-image: url("https://farm6.staticflickr.com/5621/19873946623_41f7c22954_o.jpg");
 }
@@ -19,7 +25,12 @@ div .navbar-default {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#febbbb', endColorstr='#317684', GradientType=0);
   /* IE6-9 */
-  background-image: none !important;
+  background: #f5f5f5;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(1, #ffffff));
+  background: -ms-linear-gradient(bottom, #eeeeee, #ffffff);
+  background: -moz-linear-gradient(center bottom, #eeeeee 0%, #ffffff 100%);
+  background: -o-linear-gradient(#ffffff, #eeeeee);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
   border: none;
   font-family: "Courier New", monospace;
 }
@@ -82,7 +93,13 @@ div .skills {
   font-size: 2em;
   color: #f1f7ee;
   text-align: center;
-  background-color: #cbd4c2;
+  background-color: #0781ff;
+}
+div .skills .thumbnails {
+  border-top: solid 1px #eeeeee;
+  border-left: solid 1px #e5e5e5;
+  border-right: solid 1px #e5e5e5;
+  border-bottom: solid 1px #dddddd;
 }
 div .skills h2 {
   font-family: "Courier New", monospace;
@@ -92,7 +109,11 @@ div .skills h2 {
 div .skills p {
   font-family: Gill Sans;
   font-size: 24px;
-  color: #1e2d2f;
+  color: #424b54;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 div .skills p #title {
   font-family: Gill Sans;
@@ -105,6 +126,9 @@ div #fittext1 {
   text-transform: uppercase;
   display: block;
   margin: 5% auto 5%;
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 div .container-fit {
   padding: 2% 2% 2%;
@@ -112,6 +136,11 @@ div .container-fit {
 }
 div h1.fancy_title span {
   display: inline-block;
+  -webkit-transform: scale(3);
+  -moz-transform: scale(3);
+  -o-transform: scale(3);
+  -ms-transform: scale(3);
+  transform: scale(3);
 }
 div .char1,
 div .char3,
@@ -139,7 +168,7 @@ div .portfolio {
   font-size: 2em;
   color: #2e2e3a;
   text-align: center;
-  background-color: #c3b299;
+  background-color: #6db5ff;
 }
 div .portfolio h1 {
   padding-top: 65px;
@@ -166,12 +195,17 @@ div .content {
   height: 660px;
   font-size: 0.9em;
   text-align: center;
-  background: rgba(0, 0, 0, 0.2);
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e6e6e6), color-stop(1, #ffffff));
+  background: -ms-linear-gradient(bottom, #e6e6e6 0%, #ffffff 100%);
+  background: -moz-linear-gradient(center bottom, #e6e6e6 0%, #ffffff 100%);
+  background: -o-linear-gradient(#ffffff, #e6e6e6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
 }
 div .content h1 {
   padding-top: 65px;
   text-align: center;
-  color: #ffffff;
+  color: #424b54;
   font: 95px/1 "Impact";
   text-transform: uppercase;
   display: block;
@@ -181,7 +215,7 @@ div .content p {
   padding: 0 100px;
   font-family: Gill Sans;
   font-size: 1.8em;
-  color: #f5f5f5;
+  color: #424b54;
 }
 div #about {
   padding: 20px 25px;
@@ -198,7 +232,13 @@ div .contact {
   font-size: 1.5em;
   color: #424b54;
   text-align: center;
-  background-color: #1e2d2f;
+  background-color: #ffe86d;
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
 }
 div .contact h1 {
   padding-top: 65px;
